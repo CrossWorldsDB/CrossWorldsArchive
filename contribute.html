@@ -3,207 +3,141 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>How to Contribute — SRCW Archive</title>
+  <title>Contribute — CrossWorlds Archive</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div id="site">
 
-  <div id="wrapper">
+  <div id="header">
+    <h1>
+      <span>CrossWorlds</span> Archive
+      <span class="tagline">Community asset database for Sonic Racing CrossWorlds</span>
+    </h1>
+    <nav id="header-nav">
+      <a href="index.html">Home</a>
+      <a href="contribute.html" class="active">Contribute</a>
+      <a href="https://github.com/CrossWorldsDB/CrossWorldsArchive" target="_blank">GitHub &#8599;</a>
+    </nav>
+  </div>
 
-    <div id="header">
-      <h1><span>CrossWorlds</span> Archive</h1>
-      <div class="tagline">Community asset database for Sonic Racing CrossWorlds &mdash; textures and audio</div>
-    </div>
+  <div style="margin-top:10px;" class="contribute-layout">
 
-    <div id="navbar">
-      <a href="index.html">Home</a><a href="contribute.html">Contribute</a><a href="https://github.com/CrossWorldsDB/CrossWorldsArchive" target="_blank">GitHub</a>
-    </div>
-
-    <div id="content-area">
-
-      <div id="sidebar">
-        <div class="panel">
-          <div class="panel-title">On This Page</div>
-          <div class="panel-body" style="font-size:10px; line-height:2;">
-            <a href="#overview">Overview</a><br>
-            <a href="#repo-structure">Repo Structure</a><br>
-            <a href="#adding-assets">Adding Assets</a><br>
-            <a href="#json-format">JSON Format</a><br>
-            <a href="#naming">Naming Conventions</a><br>
-            <a href="#pull-request">Submit PR</a><br>
-            <a href="#template">JSON Template</a>
-          </div>
-        </div>
-
-        <div class="panel">
-          <div class="panel-title">Quick Help</div>
-          <div class="panel-body" style="font-size:10px; line-height:1.8;">
-            <a href="index.html">&laquo; Back to Archive</a><br>
-            <a href="https://github.com/CrossWorldsDB/CrossWorldsArchive" target="_blank">GitHub Repo &#8599;</a>
-          </div>
+    <div class="contribute-sidebar">
+      <div class="side-panel">
+        <div class="side-panel-title">On this page</div>
+        <div class="side-panel-body">
+          <a href="#overview">Overview</a><br>
+          <a href="#structure">Folder structure</a><br>
+          <a href="#steps">How to add assets</a><br>
+          <a href="#json">JSON format</a><br>
+          <a href="#guidelines">Guidelines</a>
         </div>
       </div>
+      <div class="side-panel">
+        <div class="side-panel-title">Links</div>
+        <div class="side-panel-body">
+          <a href="index.html">&laquo; Back to archive</a><br>
+          <a href="https://github.com/CrossWorldsDB/CrossWorldsArchive" target="_blank">GitHub repo &#8599;</a><br>
+          <a href="https://jsonlint.com" target="_blank">JSON validator &#8599;</a>
+        </div>
+      </div>
+    </div>
 
-      <div id="main-content">
-        <div class="panel">
-          <div class="panel-title">How to Contribute to the Archive</div>
-          <div class="panel-body">
-            <div id="contribute-content">
+    <div class="contribute-main">
+      <div class="content-panel">
+        <div class="content-panel-title">How to Contribute</div>
+        <div class="content-panel-body">
 
-              <h2 id="overview">Overview</h2>
-              <p>
-                The SRCW Asset Archive is stored entirely on GitHub. All asset metadata is in
-                <code>data/assets.json</code>. Asset files (textures, audio) live in the
-                <code>assets/</code> directory. Anyone with a GitHub account can contribute
-                by submitting a Pull Request.
-              </p>
-              <div class="note">
-                <b>Note:</b> Please only submit assets you have ripped yourself or that are
-                already freely available to the community. Do not submit copyrighted material
-                that has not been publicly extracted.
-              </div>
+          <h2 id="overview">Overview</h2>
+          <p>
+            The archive is stored entirely on GitHub. Asset metadata lives in
+            <code>data/assets.json</code> — generated automatically by the
+            included Python script. Asset files go in the <code>assets/</code>
+            folder. Anyone with a GitHub account can contribute via pull request.
+          </p>
+          <div class="note">
+            Only submit assets you ripped yourself or that are already publicly
+            available in the community. Do not submit anything you don't have
+            the right to share.
+          </div>
 
-              <h2 id="repo-structure">Repository Structure</h2>
-              <pre>
-srcw-archive/
+          <h2 id="structure">Folder structure</h2>
+          <pre>
+CrossWorldsArchive/
 ├── index.html
 ├── asset.html
 ├── contribute.html
-├── css/
-│   └── style.css
-├── js/
-│   └── main.js
+├── css/style.css
+├── js/main.js
 ├── data/
-│   └── assets.json
+│   └── assets.json     
 └── assets/
-    ├── textures/
-    │   ├── characters/
-    │   ├── vehicles/
-    │   ├── tracks/
-    │   ├── ui/
-    │   ├── effects/
-    │   └── misc/
-    └── audio/
-        ├── music/
-        ├── sfx/
-        └── voice/
-              </pre>
+    ├── 01_Union/
+    │   ├── UI/
+    │   ├── Asset/
+    │   ├── Map/
+    │   └── Sound/
+    ├── 02_Union/
+    └── ...</pre>
 
-              <h2 id="adding-assets">Steps to Add an Asset</h2>
-              <ol>
-                <li>
-                  <b>Fork the repository</b> on GitHub by clicking the Fork button at the top right
-                  of the repo page.
-                </li>
-                <li>
-                  <b>Clone your fork</b> to your local machine:<br>
-                  <pre>git clone https://github.com/YOUR-USERNAME/CrossWorldsArchive.git</pre>
-                </li>
-                <li>
-                  <b>Add your asset file</b> to the correct subfolder inside <code>assets/</code>.
-                  For example, a character texture goes in <code>assets/textures/characters/</code>.
-                </li>
-                <li>
-                  <b>Edit <code>data/assets.json</code></b> and add a new entry for your asset
-                  (see format below). Add it to the <code>"assets"</code> array.
-                </li>
-                <li>
-                  <b>Commit your changes:</b><br>
-                  <pre>git add .
-git commit -m "Add: Sonic kart body texture v1.2.0"
-git push origin main</pre>
-                </li>
-                <li>
-                  <b>Open a Pull Request</b> on GitHub from your fork to the main repository.
-                  Use a clear title describing what you added.
-                </li>
-              </ol>
+          <p>
+            The patch folder name (e.g. <code>01_Union</code>) and the category
+            folder directly inside it (e.g. <code>UI</code>, <code>Asset</code>)
+            are read directly from the file path. Keep the same structure that
+            Fmodel exports.
+          </p>
 
-              <h2 id="json-format">JSON Format</h2>
-              <p>Each asset entry in <code>data/assets.json</code> must follow this structure:</p>
-              <pre>
+          <h2 id="steps">How to add assets</h2>
+          <ol>
+            <li>Fork the repository on GitHub</li>
+            <li>Clone your fork to your PC</li>
+            <li>Copy your exported files into the correct folder under <code>assets/</code></li>
+            <li>Run <code>python generate_assets.py</code> from the repo root — this rewrites <code>data/assets.json</code> automatically</li>
+            <li>Commit and push everything (the asset files + the updated JSON)</li>
+            <li>Open a pull request back to the main repo</li>
+          </ol>
+
+          <h2 id="json">JSON format</h2>
+          <p>
+            The JSON is generated automatically by the script — you don't need
+            to write it by hand. Each entry looks like this:
+          </p>
+          <pre>
 {
-  "id": "unique_snake_case_id",
-  "name": "Human Readable Name",
-  "description": "Short description of what this asset is and where it appears.",
+  "file": "assets/01_Union/UI/Common/UI_Common_Icon.png",
   "type": "texture",
-  "item_type": "character",
-  "patch_version": "1.2.0",
-  "category": "character",
-  "file": "assets/textures/characters/filename.png",
-  "resolution": "1024x1024",
-  "tags": ["sonic", "character", "body"]
-}
-              </pre>
+  "patch": "01_Union",
+  "category": "UI"
+}</pre>
 
-              <p><b>Field Reference:</b></p>
-              <table id="meta-table" style="width:100%; margin:6px 0;">
-                <tbody>
-                  <tr><th>id</th><td>Unique snake_case identifier. Must not duplicate an existing ID.</td></tr>
-                  <tr><th>name</th><td>Display name shown in the archive browser.</td></tr>
-                  <tr><th>description</th><td>One or two sentences about what the asset is.</td></tr>
-                  <tr><th>type</th><td><code>texture</code> or <code>audio</code></td></tr>
-                  <tr><th>item_type</th><td><code>character</code>, <code>vehicle</code>, <code>track</code>, <code>ui</code>, <code>effects</code>, or <code>misc</code></td></tr>
-                  <tr><th>patch_version</th><td>Game patch version when this asset was ripped. Format: <code>X.Y.Z</code></td></tr>
-                  <tr><th>category</th><td>Same as item_type, used for internal grouping.</td></tr>
-                  <tr><th>file</th><td>Relative path from repo root, e.g. <code>assets/textures/ui/hud.png</code></td></tr>
-                  <tr><th>resolution</th><td>Image resolution, e.g. <code>1024x1024</code>. Use <code>N/A</code> for audio.</td></tr>
-                  <tr><th>tags</th><td>Array of lowercase keyword strings for search.</td></tr>
-                </tbody>
-              </table>
+          <table class="field-table">
+            <tr><th>file</th><td>Path from repo root to the asset file</td></tr>
+            <tr><th>type</th><td><code>texture</code> or <code>audio</code></td></tr>
+            <tr><th>patch</th><td>Patch folder name, e.g. <code>01_Union</code></td></tr>
+            <tr><th>category</th><td>Top-level folder inside the patch, e.g. <code>UI</code>, <code>Asset</code>, <code>Map</code></td></tr>
+          </table>
 
-              <h2 id="naming">Naming Conventions</h2>
-              <ul>
-                <li>IDs: <code>character_sonic_body_diffuse</code>, <code>ui_hud_speedometer</code></li>
-                <li>Filenames: lowercase, underscores, no spaces: <code>sonic_kart_body.png</code></li>
-                <li>Audio: include format in name if needed: <code>bgm_splash_screen.ogg</code></li>
-                <li>Patch version: use the exact version shown in the game's main menu or patch notes</li>
-              </ul>
+          <h2 id="guidelines">Guidelines</h2>
+          <ul>
+            <li>Keep the folder structure matching what Fmodel exports — don't rename folders</li>
+            <li>Use lowercase filenames with no spaces if you rename anything</li>
+            <li>One pull request per patch update ideally, not one PR per file</li>
+            <li>PR title format: <code>Add: 02_Union UI textures</code></li>
+            <li>Check your JSON is valid before submitting at <a href="https://jsonlint.com" target="_blank">jsonlint.com</a></li>
+          </ul>
 
-              <h2 id="pull-request">Pull Request Guidelines</h2>
-              <ul>
-                <li>One PR per batch of related assets (e.g. all textures from one patch update)</li>
-                <li>PR title format: <code>Add: [category] [asset name(s)] [version]</code></li>
-                <li>Include a brief description of what you're adding and how it was extracted</li>
-                <li>Make sure all JSON is valid before submitting (use <a href="https://jsonlint.com/" target="_blank">JSONLint &#8599;</a>)</li>
-                <li>Verify the file paths in JSON match the actual file locations</li>
-              </ul>
-
-              <h2 id="template">JSON Template (Copy &amp; Paste)</h2>
-              <p>Use this template for a new asset entry:</p>
-              <pre>
-{
-  "id": "CHANGE_ME",
-  "name": "CHANGE ME",
-  "description": "CHANGE ME",
-  "type": "texture",
-  "item_type": "misc",
-  "patch_version": "1.0.0",
-  "category": "misc",
-  "file": "assets/textures/misc/CHANGE_ME.png",
-  "resolution": "512x512",
-  "tags": ["tag1", "tag2"]
-}
-              </pre>
-              <p>
-                Remember to add a comma after the previous entry in the JSON array before
-                pasting your new entry, or you will get a parse error.
-              </p>
-
-            </div>
-          </div>
         </div>
       </div>
-
-    </div>
-
-    <div id="footer">
-      CrossWorlds Archive &mdash; fan-maintained, not affiliated with SEGA or Sonic Team &mdash;
-      <a href="https://github.com/CrossWorldsDB/CrossWorldsArchive" target="_blank">GitHub</a>
     </div>
 
   </div>
 
+  <div id="footer">
+    CrossWorlds Archive &mdash; fan-maintained community project, not affiliated with SEGA or Sonic Team &mdash;
+    <a href="https://github.com/CrossWorldsDB/CrossWorldsArchive" target="_blank">GitHub</a>
+  </div>
+
+</div>
 </body>
 </html>
