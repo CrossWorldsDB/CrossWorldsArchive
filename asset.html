@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Asset Viewer — SRCWDB</title>
+  <title>Asset Viewer — CrossWorlds Archive</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body data-page="asset">
@@ -12,70 +11,63 @@
   <div id="viewer-wrapper">
 
     <div id="header">
-      <h1>&#9733; Sonic Racing CrossWorlds Asset Database</h1>
-      <div class="tagline">Community-maintained database of game assets &mdash; Textures &amp; Audio</div>
+      <h1><span>CrossWorlds</span> Archive</h1>
+      <div class="tagline">Community asset database for Sonic Racing CrossWorlds &mdash; textures and audio</div>
     </div>
-
     <div id="navbar">
-      <a href="index.html">&#187; Home</a><a href="contribute.html">&#187; Contribute</a>
+      <a href="index.html">Home</a><a href="contribute.html">Contribute</a><a href="https://github.com/CrossWorldsDB/CrossWorldsArchive" target="_blank">GitHub</a>
     </div>
 
     <div id="viewer-back">
-      &laquo; <a href="index.html">Back to Asset Browser</a>
+      &laquo; <a href="index.html">Back to browser</a>
     </div>
 
-    <div id="loading-msg">Loading</div>
+    <div id="loading-msg">Loading asset...</div>
 
     <div id="viewer-container" style="display:none;">
 
-      <div id="viewer-asset-name">Loading</div>
+      <div id="viewer-asset-name">Loading...</div>
 
       <div id="viewer-layout">
 
         <div id="viewer-left">
 
-          <div id="viewer-media-box" class="panel-body" style="background:#222; border:1px solid #7b7b7b; padding:4px; text-align:center; min-height:200px; display:flex; align-items:center; justify-content:center;">
+          <div id="viewer-media-box">
           </div>
 
           <div id="viewer-btn-row">
-            <a id="btn-download" class="viewer-btn" href="#" download>&#8595; Download</a>
-            <a id="btn-fullscreen" class="viewer-btn" href="#">&#9974; Fullscreen</a>
+            <a id="btn-download" class="viewer-btn" href="#">&#8595; Download</a>
+            <a id="btn-fullscreen" class="viewer-btn" href="#">Fullscreen</a>
           </div>
 
         </div>
 
         <div id="viewer-right">
-
-          <div id="viewer-description">(No description)</div>
-
-          <div class="panel" style="margin-top:0;">
-            <div class="panel-title">Asset Information</div>
+          <div class="panel">
+            <div class="panel-title">Asset Info</div>
             <div class="panel-body" style="padding:0;">
               <table id="meta-table">
-                <tbody id="meta-tbody">
-                </tbody>
+                <tbody id="meta-tbody"></tbody>
               </table>
             </div>
           </div>
-
         </div>
 
       </div>
 
     </div>
 
-    <div id="footer" style="margin-top:5px;">
-      Sonic Racing CrossWorlds Asset Archive &mdash; Fan-maintained, not affiliated with SEGA or Sonic Team.
-      &nbsp;|&nbsp; <a href="contribute.html">Contribute</a>
-      &nbsp;|&nbsp; <a href="https://github.com/CrossWorldsDB/CrossWorldsArchive" target="_blank">GitHub</a>
+    <div id="footer">
+      CrossWorlds Archive &mdash; fan-maintained, not affiliated with SEGA or Sonic Team &mdash;
+      <a href="https://github.com/CrossWorldsDB/CrossWorldsArchive" target="_blank">GitHub</a>
     </div>
 
   </div>
 
   <div id="fullscreen-overlay">
     <span id="fullscreen-close">[X] Close</span>
-    <img id="fullscreen-img" src="" alt="Fullscreen view">
-    <div id="fullscreen-hint">Press ESC or click outside image to close</div>
+    <img id="fullscreen-img" src="" alt="">
+    <div id="fullscreen-hint">ESC or click outside to close</div>
   </div>
 
   <script src="js/main.js"></script>
