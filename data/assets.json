@@ -16558,5 +16558,1991 @@
     "type": "texture",
     "patch": "01_Union",
     "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/3DResources/EventMonitor/UI_EventMonitor_Extnd04_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/3DResources/EventMonitor/UI_EventMonitor_Extnd05_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/3DResources/EventMonitor/UI_EventMonitor_Extnd10_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/3DResources/EventMonitor/UI_EventMonitor_Extnd11_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/3DResources/EventMonitor/UI_EventMonitor_Extnd12_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/CharaSelect/Texture/CharaCut/UI_CharaCut_Extnd04_Character001.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/CharaSelect/Texture/CharaCut/UI_CharaCut_Extnd04_Character002.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/CharaSelect/Texture/CharaCut/UI_CharaCut_Extnd04_Character003.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/CharaSelect/Texture/CharaCut/UI_CharaCut_Extnd05_Character001.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/CharaSelect/Texture/CharaCut/UI_CharaCut_Extnd05_Character002.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/CharaSelect/Texture/CharaCut/UI_CharaCut_Extnd10_Character001.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/CharaSelect/Texture/CharaCut/UI_CharaCut_Extnd11_Character001.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/CharaSelect/Texture/CharaCut/UI_CharaCut_Extnd12_Character001.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/CharaSelect/Texture/CharaIcon/UI_CharaIcon_Extnd04_Character001.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/CharaSelect/Texture/CharaIcon/UI_CharaIcon_Extnd04_Character002.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/CharaSelect/Texture/CharaIcon/UI_CharaIcon_Extnd04_Character003.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/CharaSelect/Texture/CharaIcon/UI_CharaIcon_Extnd05_Character001.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/CharaSelect/Texture/CharaIcon/UI_CharaIcon_Extnd05_Character002.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/CharaSelect/Texture/CharaIcon/UI_CharaIcon_Extnd10_Character001.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/CharaSelect/Texture/CharaIcon/UI_CharaIcon_Extnd11_Character001.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/CharaSelect/Texture/CharaIcon/UI_CharaIcon_Extnd12_Character001.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/CharaSelect/Texture/CharaIconHUD/UI_Mask_CharaIconHUD_Extnd04_Character001.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/CharaSelect/Texture/CharaIconHUD/UI_Mask_CharaIconHUD_Extnd04_Character002.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/CharaSelect/Texture/CharaIconHUD/UI_Mask_CharaIconHUD_Extnd04_Character003.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/CharaSelect/Texture/CharaIconHUD/UI_Mask_CharaIconHUD_Extnd05_Character001.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/CharaSelect/Texture/CharaIconHUD/UI_Mask_CharaIconHUD_Extnd05_Character002.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/CharaSelect/Texture/CharaIconHUD/UI_Mask_CharaIconHUD_Extnd10_Character001.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/CharaSelect/Texture/CharaIconHUD/UI_Mask_CharaIconHUD_Extnd11_Character001.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/CharaSelect/Texture/CharaIconHUD/UI_Mask_CharaIconHUD_Extnd12_Character001.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/CharaSelect/Texture/CharaSet/UI_CharaSet_Extnd04_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/CharaSelect/Texture/CharaSet/UI_CharaSet_Extnd05_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/MachineSelect/Texture/MachineIcon/UI_MachineIcon_DSH_13.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/MachineSelect/Texture/MachineIcon/UI_MachineIcon_HND_12.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/MachineSelect/Texture/MachineIcon/UI_MachineIcon_HND_14.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/MachineSelect/Texture/MachineIcon/UI_MachineIcon_POW_11.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/MachineSelect/Texture/MachineIcon/UI_MachineIcon_SPD_11.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/MachineSelect/Texture/PartsIcon/Front/UI_PartsIcon_DSH_13_F.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/MachineSelect/Texture/PartsIcon/Front/UI_PartsIcon_HND_12_F.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/MachineSelect/Texture/PartsIcon/Front/UI_PartsIcon_HND_14_F.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/MachineSelect/Texture/PartsIcon/Front/UI_PartsIcon_POW_11_F.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/MachineSelect/Texture/PartsIcon/Front/UI_PartsIcon_SPD_11_F.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/MachineSelect/Texture/PartsIcon/Rear/UI_PartsIcon_DSH_13_R.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/MachineSelect/Texture/PartsIcon/Rear/UI_PartsIcon_HND_12_R.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/MachineSelect/Texture/PartsIcon/Rear/UI_PartsIcon_HND_14_R.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/MachineSelect/Texture/PartsIcon/Rear/UI_PartsIcon_POW_11_R.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/MachineSelect/Texture/PartsIcon/Rear/UI_PartsIcon_SPD_11_R.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/MachineSelect/Texture/PartsIcon/Wheel/UI_PartsIcon_HND_12_W.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/MachineSelect/Texture/PartsIcon/Wheel/UI_PartsIcon_HND_14_W.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/MachineSelect/Texture/PartsIcon/Wheel/UI_PartsIcon_POW_11_W.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/CharaMachineSelect/MachineSelect/Texture/PartsIcon/Wheel/UI_PartsIcon_SPD_11_W.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Common/HonorTitle/Texture/Plate/UI_HonorPlate_Extnd04_521.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Common/HonorTitle/Texture/Plate/UI_HonorPlate_Extnd04_522.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Common/HonorTitle/Texture/Plate/UI_HonorPlate_Extnd05_511.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Common/HonorTitle/Texture/Plate/UI_HonorPlate_Extnd05_512.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Common/HonorTitle/Texture/Plate/UI_HonorPlate_Extnd10_561.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Common/HonorTitle/Texture/Plate/UI_HonorPlate_Extnd10_562.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Common/HonorTitle/Texture/Plate/UI_HonorPlate_Extnd11_111.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Common/HonorTitle/Texture/Plate/UI_HonorPlate_Extnd11_112.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Common/HonorTitle/Texture/Plate/UI_HonorPlate_Extnd12_121.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Common/HonorTitle/Texture/Plate/UI_HonorPlate_Extnd12_122.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Common/Stamp/Texture/StampIcon/UI_Stamp_Extnd04_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Common/Stamp/Texture/StampIcon/UI_Stamp_Extnd04_02.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Common/Stamp/Texture/StampIcon/UI_Stamp_Extnd04_03.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Common/Stamp/Texture/StampIcon/UI_Stamp_Extnd05_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Common/Stamp/Texture/StampIcon/UI_Stamp_Extnd05_02.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Common/Stamp/Texture/StampIcon/UI_Stamp_Extnd10_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Common/Stamp/Texture/StampIcon/UI_Stamp_Extnd11_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Common/Stamp/Texture/StampIcon/UI_Stamp_Extnd12_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Festa/Texture/TeamCut/UI_Festa_TeamCut_Extnd04_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Festa/Texture/TeamCut/UI_Festa_TeamCut_Extnd04_02.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Festa/Texture/TeamCut/UI_Festa_TeamCut_Extnd04_03.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Festa/Texture/TeamCut/UI_Festa_TeamCut_Extnd05_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Festa/Texture/TeamCut/UI_Festa_TeamCut_Extnd05_02.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Festa/Texture/TeamCut/UI_Festa_TeamCut_Extnd05_03.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Festa/Texture/TeamCut/UI_Festa_TeamCut_Extnd10_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Festa/Texture/TeamCut/UI_Festa_TeamCut_Extnd10_02.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Festa/Texture/TeamCut/UI_Festa_TeamCut_Extnd10_03.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Festa/Texture/TeamCut/UI_Festa_TeamCut_Extnd11_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Festa/Texture/TeamCut/UI_Festa_TeamCut_Extnd11_02.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Festa/Texture/TeamCut/UI_Festa_TeamCut_Extnd11_03.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Festa/Texture/TeamCut/UI_Festa_TeamCut_Extnd12_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Festa/Texture/TeamCut/UI_Festa_TeamCut_Extnd12_02.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Festa/Texture/TeamCut/UI_Festa_TeamCut_Extnd12_03.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Festa/Texture/TeamIcon/UI_Festa_TeamIcon_Extnd04_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Festa/Texture/TeamIcon/UI_Festa_TeamIcon_Extnd04_02.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Festa/Texture/TeamIcon/UI_Festa_TeamIcon_Extnd04_03.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Festa/Texture/TeamIcon/UI_Festa_TeamIcon_Extnd05_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Festa/Texture/TeamIcon/UI_Festa_TeamIcon_Extnd05_02.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Festa/Texture/TeamIcon/UI_Festa_TeamIcon_Extnd05_03.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Festa/Texture/TeamIcon/UI_Festa_TeamIcon_Extnd10_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Festa/Texture/TeamIcon/UI_Festa_TeamIcon_Extnd10_02.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Festa/Texture/TeamIcon/UI_Festa_TeamIcon_Extnd10_03.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Festa/Texture/TeamIcon/UI_Festa_TeamIcon_Extnd11_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Festa/Texture/TeamIcon/UI_Festa_TeamIcon_Extnd11_02.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Festa/Texture/TeamIcon/UI_Festa_TeamIcon_Extnd11_03.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Festa/Texture/TeamIcon/UI_Festa_TeamIcon_Extnd12_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Festa/Texture/TeamIcon/UI_Festa_TeamIcon_Extnd12_02.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Festa/Texture/TeamIcon/UI_Festa_TeamIcon_Extnd12_03.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd04_21400.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd04_21401.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd04_21402.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd04_21403.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd04_21404.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd04_21405.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd05_20300.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd05_20301.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd05_20302.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd05_20303.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd05_20304.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd05_20305.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd101_60000.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd101_60001.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd102_60010.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd102_60011.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd102_60012.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd103_60020.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd103_60021.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd103_60022.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd103_60023.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd103_60024.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd104_60030.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd104_60031.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd104_60032.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd104_60033.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd104_60034.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd105_60040.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd105_60041.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd105_60042.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd106_60050.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd106_60051.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd106_60052.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd106_60053.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd106_60054.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd107_60060.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd107_60061.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd107_60062.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd108_60070.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd109_60080.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd109_60081.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd109_60082.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd109_60083.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd10_21600.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd10_21601.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd10_21602.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd10_21603.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd10_21604.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd10_21605.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd110_60090.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd110_60091.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd110_60092.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd110_60093.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd111_60100.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd111_60101.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd112_60110.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd112_60111.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd113_60120.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd113_60121.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd113_60122.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd113_60123.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd113_60124.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd113_60125.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd113_60126.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd113_60127.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd114_60130.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd114_60131.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd115_60140.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd115_60141.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd115_60142.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd115_60143.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd115_60144.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd115_60145.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd116_60150.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd117_60160.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd117_60161.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd117_60162.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd117_60163.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd117_60164.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd117_60165.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd117_60166.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd11_20100.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd11_20101.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd11_20102.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd11_20103.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd11_20104.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd11_20105.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd12_20700.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd12_20701.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd12_20702.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd12_20703.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd12_20704.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerImage/UI_Sticker_Extnd12_20705.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd04_21400.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd04_21401.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd04_21402.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd04_21403.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd04_21404.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd04_21405.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd05_20300.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd05_20301.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd05_20302.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd05_20303.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd05_20304.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd05_20305.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd101_60000.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd101_60001.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd102_60010.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd102_60011.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd102_60012.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd103_60020.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd103_60021.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd103_60022.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd103_60023.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd103_60024.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd104_60030.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd104_60031.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd104_60032.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd104_60033.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd104_60034.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd105_60040.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd105_60041.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd105_60042.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd106_60050.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd106_60051.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd106_60052.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd106_60053.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd106_60054.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd107_60060.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd107_60061.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd107_60062.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd108_60070.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd109_60080.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd109_60081.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd109_60082.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd109_60083.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd10_21600.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd10_21601.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd10_21602.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd10_21603.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd10_21604.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd10_21605.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd110_60090.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd110_60091.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd110_60092.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd110_60093.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd111_60100.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd111_60101.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd112_60110.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd112_60111.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd113_60120.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd113_60121.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd113_60122.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd113_60123.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd113_60124.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd113_60125.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd113_60126.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd113_60127.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd114_60130.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd114_60131.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd115_60140.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd115_60141.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd115_60142.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd115_60143.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd115_60144.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd115_60145.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd116_60150.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd117_60160.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd117_60161.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd117_60162.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd117_60163.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd117_60164.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd117_60165.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd117_60166.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd11_20100.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd11_20101.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd11_20102.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd11_20103.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd11_20104.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd11_20105.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd12_20700.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd12_20701.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd12_20702.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd12_20703.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd12_20704.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Garage/MachineCustom/CustomSticker/StickerTmb/UI_StickerTmb_Extnd12_20705.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/ItemGet/Texture/MachineIcon_Complete/UI_MachineIcon_DSH_13_Complete.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/ItemGet/Texture/MachineIcon_Complete/UI_MachineIcon_HND_12_Complete.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/ItemGet/Texture/MachineIcon_Complete/UI_MachineIcon_HND_14_Complete.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/ItemGet/Texture/MachineIcon_Complete/UI_MachineIcon_POW_11_Complete.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/ItemGet/Texture/MachineIcon_Complete/UI_MachineIcon_SPD_11_Complete.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Jukebox/MusicJacket/UI_MusicJacket_Extnd04_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Jukebox/MusicJacket/UI_MusicJacket_Extnd05_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Jukebox/MusicJacket/UI_MusicJacket_Extnd10_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Jukebox/MusicJacket/UI_MusicJacket_Extnd11_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Jukebox/MusicJacket/UI_MusicJacket_Extnd12_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Jukebox/MusicJacket/UI_MusicJacket_Extnd23_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Race/MiniMap/Texture/CourseMapTexture/T_stg1503_Extnd04_01_Editor_100000_-90_x1715_y18609.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Race/MiniMap/Texture/CourseMapTexture/T_stg1503_Extnd04_02_Editor_100000_-90_x47480_y-122587.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Race/MiniMap/Texture/CourseMapTexture/T_stg1503_Extnd04_F_01_Editor_100000_-90_x22_y28058.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Race/MiniMap/Texture/CourseMapTexture/T_stg1503_Extnd04_F_02_Editor_157420_-90_x100072_y143642.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/Race/MiniMap/Texture/CourseMapTexture/T_stg1506_Extnd05_Editor_118000_-90_x33000_y5500.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/StatusInfo/Texture/EventBG/UI_EventBG_Extnd04_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/StatusInfo/Texture/EventBG/UI_EventBG_Extnd05_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/StatusInfo/Texture/EventBG/UI_EventBG_Extnd10_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/StatusInfo/Texture/EventBG/UI_EventBG_Extnd11_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/StatusInfo/Texture/EventBG/UI_EventBG_Extnd12_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/StatusInfo/Texture/EventReward/UI_EventReward_Extnd04_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/StatusInfo/Texture/EventReward/UI_EventReward_Extnd05_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/StatusInfo/Texture/EventReward/UI_EventReward_Extnd10_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/StatusInfo/Texture/EventReward/UI_EventReward_Extnd11_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/StatusInfo/Texture/EventReward/UI_EventReward_Extnd12_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/StatusInfo/Texture/HornTmb/UI_HornTmb_Extnd04_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/StatusInfo/Texture/HornTmb/UI_HornTmb_Extnd05_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/StatusInfo/Texture/HornTmb/UI_HornTmb_Extnd10_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/StatusInfo/Texture/HornTmb/UI_HornTmb_Extnd11_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/StatusInfo/Texture/HornTmb/UI_HornTmb_Extnd12_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/System/Texture_StageBG/UI_StageBG1503_Extnd04.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/System/Texture_StageBG/UI_StageBG1506_Extnd05.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/System/Texture_StageRing/UI_StageRing1503_Extnd04.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/System/Texture_StageRing/UI_StageRing1506_Extnd05.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/System/Texture_StageTmb/UI_StageTmb1503_Extnd04.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/System/Texture_StageTmb/UI_StageTmb1506_Extnd05.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/TopInfo/Texture/EventInfo/UI_EventInfo_Extnd04_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/TopInfo/Texture/EventInfo/UI_EventInfo_Extnd04_03.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/TopInfo/Texture/EventInfo/UI_EventInfo_Extnd05_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/TopInfo/Texture/EventInfo/UI_EventInfo_Extnd05_03.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/TopInfo/Texture/EventInfo/UI_EventInfo_Extnd10_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/TopInfo/Texture/EventInfo/UI_EventInfo_Extnd10_03.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/TopInfo/Texture/EventInfo/UI_EventInfo_Extnd11_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/TopInfo/Texture/EventInfo/UI_EventInfo_Extnd11_03.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/TopInfo/Texture/EventInfo/UI_EventInfo_Extnd12_01.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
+  },
+  {
+    "file": "assets/02_Union/UI/TopInfo/Texture/EventInfo/UI_EventInfo_Extnd12_03.png",
+    "type": "texture",
+    "patch": "02_Union",
+    "category": "UI"
   }
 ]
