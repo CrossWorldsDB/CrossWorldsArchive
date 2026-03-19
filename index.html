@@ -7,70 +7,66 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body data-page="index">
+<div id="site">
 
-  <div id="wrapper">
+  <div id="header">
+    <h1>
+      <span>CrossWorlds</span> Archive
+      <span class="tagline">Community asset database for Sonic Racing CrossWorlds</span>
+    </h1>
+    <nav id="header-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="contribute.html">Contribute</a>
+      <a href="https://github.com/CrossWorldsDB/CrossWorldsArchive" target="_blank">GitHub &#8599;</a>
+    </nav>
+  </div>
 
-    <div id="header">
-      <h1><span>CrossWorlds</span> Archive</h1>
-      <div class="tagline">Community asset database for Sonic Racing CrossWorlds &mdash; textures and audio</div>
+  <div id="filter-bar">
+    <div class="filter-group">
+      <label for="filter-search">Search</label>
+      <input type="text" id="filter-search" placeholder="Search by filename...">
     </div>
-
-    <div id="navbar">
-      <a href="index.html">Home</a><a href="contribute.html">Contribute</a><a href="https://github.com/CrossWorldsDB/CrossWorldsArchive" target="_blank">GitHub</a>
+    <div class="filter-group">
+      <label for="filter-type">Type</label>
+      <select id="filter-type">
+        <option value="">All types</option>
+        <option value="texture">Texture</option>
+        <option value="audio">Audio</option>
+      </select>
     </div>
-
-    <div id="stats-bar">Loading...</div>
-
-    <div id="filter-bar">
-
-      <div class="filter-group">
-        <label for="filter-search">Search</label>
-        <input type="text" id="filter-search" placeholder="filename...">
-      </div>
-
-      <div class="filter-group">
-        <label for="filter-type">Type</label>
-        <select id="filter-type">
-          <option value="">All types</option>
-          <option value="texture">Texture</option>
-          <option value="audio">Audio</option>
-        </select>
-      </div>
-
-      <div class="filter-group">
-        <label for="filter-patch">Patch</label>
-        <select id="filter-patch">
-          <option value="">All patches</option>
-        </select>
-      </div>
-
-      <div class="filter-group">
-        <label for="filter-subcat">Folder</label>
-        <select id="filter-subcat">
-          <option value="">All folders</option>
-        </select>
-      </div>
-
-      <button id="btn-reset">Reset</button>
-
+    <div class="filter-group">
+      <label for="filter-patch">Patch</label>
+      <select id="filter-patch">
+        <option value="">All patches</option>
+      </select>
     </div>
-
-    <div id="sort-bar">
-      <span id="result-count"></span>
+    <div class="filter-group">
+      <label for="filter-subcat">Folder</label>
+      <select id="filter-subcat">
+        <option value="">All folders</option>
+      </select>
     </div>
+    <button id="btn-reset">Reset</button>
+  </div>
 
+  <div id="meta-bar">
+    <span id="stats-bar">Loading...</span>
+    <span id="result-count"></span>
+  </div>
+
+  <div id="asset-grid-wrap">
     <div id="asset-grid">
       <div id="loading-msg">Loading assets...</div>
       <div id="no-results">No assets match your filters.</div>
     </div>
-
-    <div id="footer">
-      CrossWorlds Archive &mdash; fan-maintained, not affiliated with SEGA or Sonic Team &mdash;
-      <a href="https://github.com/CrossWorldsDB/CrossWorldsArchive" target="_blank">GitHub</a>
-    </div>
-
   </div>
 
-  <script src="js/main.js"></script>
+  <div id="footer">
+    CrossWorlds Archive &mdash; fan-maintained community project, not affiliated with SEGA or Sonic Team &mdash;
+    <a href="https://github.com/CrossWorldsDB/CrossWorldsArchive" target="_blank">GitHub</a>
+  </div>
+
+</div>
+<script src="js/main.js"></script>
 </body>
 </html>
