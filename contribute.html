@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Contribute — SRCW DB</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="wrapper">
+
+    <div id="header">
+      <h1>&#9733; Sonic Racing CrossWorlds Asset Database</h1>
+      <div class="tagline">Community-maintained database of game assets &mdash; Textures &amp; Audio</div>
+    </div>
+
+    <div id="navbar">
+      <a href="index.html">&#187; Home</a><a href="contribute.html">&#187; Contribute</a>
+    </div>
+
+    <div id="content-area">
+
+      <div id="sidebar">
+        <div class="panel">
+          <div class="panel-title">On This Page</div>
+          <div class="panel-body" style="font-size:10px; line-height:2;">
+            <a href="#overview">Overview</a><br>
+            <a href="#repo-structure">Repo Structure</a><br>
+            <a href="#adding-assets">Adding Assets</a><br>
+            <a href="#json-format">JSON Format</a><br>
+            <a href="#naming">Naming Conventions</a><br>
+            <a href="#pull-request">Submit PR</a><br>
+            <a href="#template">JSON Template</a>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-title">Quick Help</div>
+          <div class="panel-body" style="font-size:10px; line-height:1.8;">
+            <a href="index.html">&laquo; Back to Database</a><br>
+            <a href="https://github.com/CrossWorldsDB/CrossWorldsArchive" target="_blank">GitHub Repo &#8599;</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="main-content">
+        <div class="panel">
+          <div class="panel-title">How to Contribute to the Database</div>
+          <div class="panel-body">
+            <div id="contribute-content">
+
+              <h2 id="overview">Overview</h2>
+              <p>
+                The SRCW DB is stored entirely on GitHub. All asset metadata is in
+                <code>data/assets.json</code>. Asset files (textures, audio) live in the
+                <code>assets/</code> directory. Anyone with a GitHub account can contribute
+                by submitting a Pull Request.
+              </p>
+              <div class="note">
+                <b>Note:</b> Please only submit assets you have ripped yourself or that are
+                already freely available to the community. Do not submit copyrighted material
+                that has not been publicly extracted.
+              </div>
+
+              <h2 id="repo-structure">Repository Structure</h2>
+              <pre>
+CrossWorldsArchive/
+├── index.html
+├── asset.html
+├── contribute.html
+├── css/
+│   └── style.css
+├── js/
+│   └── main.js
+├── data/
+│   └── assets.json
+└── assets/
+    ├── textures/
+    │   ├── characters/
+    │   ├── vehicles/
+    │   ├── tracks/
+    │   ├── ui/
+    │   ├── effects/
+    │   └── misc/
+    └── audio/
+        ├── music/
+        ├── sfx/
+        └── voice/
+              </pre>
+
+              <h2 id="adding-assets">Steps to Add an Asset</h2>
+              <ol>
+                <li>
+                  <b>Fork the repository</b> on GitHub by clicking the Fork button at the top right
+                  of the repo page.
+                </li>
+                <li>
+                  <b>Clone your fork</b> to your local machine:<br>
+                  <pre>git clone https://github.com/CrossWorldsDB/CrossWorldsArchive.git</pre>
+                </li>
+                <li>
+                  <b>Add your asset file</b> to the correct subfolder inside <code>assets/</code>.
+                  For example, a character texture goes in <code>assets/textures/characters/</code>.
+                </li>
+                <li>
+                  <b>Edit <code>data/assets.json</code></b> and add a new entry for your asset
+                  (see format below). Add it to the <code>"assets"</code> array.
+                </li>
+                <li>
+                  <b>Commit your changes:</b><br>
+                  <pre>git add .
+git commit -m "Add: Sonic kart body texture v1.2.0"
+git push origin main</pre>
+                </li>
+                <li>
+                  <b>Open a Pull Request</b> on GitHub from your fork to the main repository.
+                  Use a clear title describing what you added.
+                </li>
+              </ol>
+
+              <h2 id="json-format">JSON Format</h2>
+              <p>Each asset entry in <code>data/assets.json</code> must follow this structure:</p>
+              <pre>
+{
+  "id": "unique_snake_case_id",
+  "name": "Human Readable Name",
+  "description": "Short description of what this asset is and where it appears.",
+  "type": "texture",
+  "item_type": "character",
+  "patch_version": "1.2.0",
+  "category": "character",
+  "file": "assets/textures/characters/filename.png",
+  "resolution": "1024x1024",
+  "tags": ["sonic", "character", "body"]
+}
+              </pre>
+
+              <p><b>Field Reference:</b></p>
+              <table id="meta-table" style="width:100%; margin:6px 0;">
+                <tbody>
+                  <tr><th>id</th><td>Unique snake_case identifier. Must not duplicate an existing ID.</td></tr>
+                  <tr><th>name</th><td>Display name shown in the archive browser.</td></tr>
+                  <tr><th>description</th><td>One or two sentences about what the asset is.</td></tr>
+                  <tr><th>type</th><td><code>texture</code> or <code>audio</code></td></tr>
+                  <tr><th>item_type</th><td><code>character</code>, <code>vehicle</code>, <code>track</code>, <code>ui</code>, <code>effects</code>, or <code>misc</code></td></tr>
+                  <tr><th>patch_version</th><td>Game patch version when this asset was ripped. Format: <code>X.Y.Z</code></td></tr>
+                  <tr><th>category</th><td>Same as item_type, used for internal grouping.</td></tr>
+                  <tr><th>file</th><td>Relative path from repo root, e.g. <code>assets/textures/ui/hud.png</code></td></tr>
+                  <tr><th>resolution</th><td>Image resolution, e.g. <code>1024x1024</code>. Use <code>N/A</code> for audio.</td></tr>
+                  <tr><th>tags</th><td>Array of lowercase keyword strings for search.</td></tr>
+                </tbody>
+              </table>
+
+              <h2 id="naming">Naming Conventions</h2>
+              <ul>
+                <li>IDs: <code>character_sonic_body_diffuse</code>, <code>ui_hud_speedometer</code></li>
+                <li>Filenames: lowercase, underscores, no spaces: <code>sonic_kart_body.png</code></li>
+                <li>Audio: include format in name if needed: <code>bgm_splash_screen.ogg</code></li>
+                <li>Patch version: use the exact version shown in the game's main menu or patch notes</li>
+              </ul>
+
+              <h2 id="pull-request">Pull Request Guidelines</h2>
+              <ul>
+                <li>One PR per batch of related assets (e.g. all textures from one patch update)</li>
+                <li>PR title format: <code>Add: [category] [asset name(s)] [version]</code></li>
+                <li>Include a brief description of what you're adding and how it was extracted</li>
+                <li>Make sure all JSON is valid before submitting (use <a href="https://jsonlint.com/" target="_blank">JSONLint &#8599;</a>)</li>
+                <li>Verify the file paths in JSON match the actual file locations</li>
+              </ul>
+
+              <h2 id="template">JSON Template (Copy &amp; Paste)</h2>
+              <p>Use this template for a new asset entry:</p>
+              <pre>
+{
+  "id": "CHANGE_ME",
+  "name": "CHANGE ME",
+  "description": "CHANGE ME",
+  "type": "texture",
+  "item_type": "misc",
+  "patch_version": "1.0.0",
+  "category": "misc",
+  "file": "assets/textures/misc/CHANGE_ME.png",
+  "resolution": "512x512",
+  "tags": ["tag1", "tag2"]
+}
+              </pre>
+              <p>
+                Remember to add a comma after the previous entry in the JSON array before
+                pasting your new entry, or you will get a parse error.
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="footer">
+      Sonic Racing CrossWorlds Database &mdash; Fan-maintained, not affiliated with SEGA or Sonic Team.
+      &nbsp;|&nbsp; <a href="contribute.html">Contribute</a>
+      &nbsp;|&nbsp; <a href="https://github.com/CrossWorldsDB/CrossWorldsArchive" target="_blank">GitHub</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
