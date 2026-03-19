@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sonic Racing CrossWorlds Database</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="index">
+
+  <div id="wrapper">
+
+    <div id="header">
+      <h1>&#9733; Sonic Racing CrossWorlds Database</h1>
+      <div class="tagline">Community-maintained database of game assets &mdash; Textures &amp; Audio</div>
+    </div>
+
+    <div id="navbar">
+      <a href="index.html">&#187; Home</a><a href="contribute.html">&#187; Contribute</a>
+    </div>
+
+    <div id="stats-bar">Loading</div>
+
+    <div id="content-area">
+
+      <div id="sidebar">
+
+        <div class="panel">
+          <div class="panel-title">&#9660; Search &amp; Filter</div>
+          <div class="panel-body">
+
+            <div class="filter-group">
+              <label for="filter-search">Search</label>
+              <input type="text" id="filter-search" placeholder="name, tags...">
+            </div>
+
+            <div class="filter-group">
+              <label for="filter-type">Asset Type</label>
+              <select id="filter-type">
+                <option value="">-- All Types --</option>
+                <option value="texture">Texture</option>
+                <option value="audio">Audio</option>
+              </select>
+            </div>
+
+            <div class="filter-group">
+              <label for="filter-item-type">Item Type</label>
+              <select id="filter-item-type">
+                <option value="">-- All --</option>
+                <option value="character">Character</option>
+                <option value="vehicle">Vehicle</option>
+                <option value="track">Track</option>
+                <option value="ui">UI</option>
+                <option value="effects">Effects</option>
+                <option value="misc">Misc</option>
+              </select>
+            </div>
+
+            <div class="filter-group">
+              <label for="filter-version">Patch Version</label>
+              <select id="filter-version">
+                <option value="">-- All Versions --</option>
+              </select>
+            </div>
+
+            <button id="btn-reset">Reset Filters</button>
+
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-title">&#9660; About</div>
+          <div class="panel-body" style="font-size:10px; line-height:1.6; color:#333;">
+            <p>This is a fan-maintained database of assets from <b>Sonic Racing CrossWorlds</b>.</p>
+            <p style="margin-top:4px;">Assets are community-ripped and organized by patch version.</p>
+            <p style="margin-top:4px;"><a href="contribute.html">Want to contribute?</a></p>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-title">&#9660; Quick Links</div>
+          <div class="panel-body" style="font-size:10px; line-height:1.8;">
+            <a href="index.html?type=texture">All Textures</a><br>
+            <a href="index.html?type=audio">All Audio</a><br>
+            <a href="contribute.html">How to Contribute</a><br>
+            <a href="https://github.com/CrossWorldsDB/CrossWorldsArchive" target="_blank">GitHub Repo &#8599;</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="main-content">
+
+        <div id="sort-bar">
+          <label for="sort-by">Sort by:</label>
+          <select id="sort-by">
+            <option value="name-asc">Name (A&ndash;Z)</option>
+            <option value="name-desc">Name (Z&ndash;A)</option>
+            <option value="version-new">Patch Version (Newest)</option>
+            <option value="version-old">Patch Version (Oldest)</option>
+          </select>
+          <span id="result-count"></span>
+        </div>
+
+        <div id="asset-grid">
+          <div id="loading-msg">Loading</div>
+          <div id="no-results">No assets match your current filters.</div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="footer">
+      Sonic Racing CrossWorlds Database &mdash; Fan-maintained, not affiliated with SEGA or Sonic Team.
+      &nbsp;|&nbsp; <a href="contribute.html">Contribute</a>
+      &nbsp;|&nbsp; <a href="https://github.com/CrossWorldsDB/CrossWorldsArchive" target="_blank">GitHub</a>
+    </div>
+
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
