@@ -2,7 +2,7 @@
   "use strict";
 
   var allAssets = [];
-  var filtered = [];
+  var filtered  = [];
 
   // ---- INIT ----
 
@@ -22,15 +22,13 @@
       if (xhr.readyState === 4) {
         if (xhr.status === 200) {
           try {
-            var data = JSON.parse(xhr.responseText);
-            allAssets = data.assets || data;
+            allAssets = JSON.parse(xhr.responseText);
             callback();
           } catch (e) {
             showError("Failed to parse assets.json: " + e.message);
           }
         } else {
-          // fallback: try loading from same dir (for local file:// testing)
-          showError("Could not load data/assets.json (HTTP " + xhr.status + "). Make sure you're running this via a web server or GitHub Pages.");
+          showError("Could not load data/assets.json (HTTP " + xhr.status + ")");
         }
       }
     };
@@ -39,39 +37,68 @@
 
   function showError(msg) {
     var el = document.getElementById("loading-msg") || document.getElementById("asset-grid");
-    if (el) {
-      el.innerHTML = '<div class="error-msg">' + escHtml(msg) + "</div>";
-    }
+    if (el) el.innerHTML = '<div class="error-msg">' + escHtml(msg) + "</div>";
+  }
+
+  // Derive a readable name from the filename
+  // "UI_Billboard_LCD_Cover.png" -> "UI Billboard LCD Cover"
+  function nameFromFile(filepath) {
+    var filename = filepath.split("/").pop();
+    var noExt = filename.replace(/\.[^.]+$/, "");
+    return noExt.replace(/_/g, " ");
+  }
+
+  // Get the immediate subfolder under category (e.g. "Common" from .../UI/Common/...)
+  // filepath: assets/01_Union/UI/Common/file.png
+  // parts[0]=assets, parts[1]=patch, parts[2]=category, parts[3]=subcat
+  function getSubcategory(filepath) {
+    var parts = filepath.split("/");
+    return parts[3] || null;
   }
 
   // ---- INDEX PAGE ----
 
   function renderIndex() {
     filtered = allAssets.slice();
-    populateVersionFilter();
+    populateFilters();
     updateStats();
     renderGrid();
     bindFilters();
   }
 
-  function populateVersionFilter() {
-    var sel = document.getElementById("filter-version");
-    if (!sel) return;
-    var versions = [];
+  function populateFilters() {
+    // Patches
+    var patches = [];
     allAssets.forEach(function (a) {
-      if (a.patch_version && versions.indexOf(a.patch_version) === -1) {
-        versions.push(a.patch_version);
-      }
+      if (patches.indexOf(a.patch) === -1) patches.push(a.patch);
     });
-    versions.sort(function (a, b) {
-      return versionCompare(b, a); // newest first
+    patches.sort();
+    var patchSel = document.getElementById("filter-patch");
+    if (patchSel) {
+      patches.forEach(function (p) {
+        var opt = document.createElement("option");
+        opt.value = p;
+        opt.textContent = p;
+        patchSel.appendChild(opt);
+      });
+    }
+
+    // Subcategories (folders under category, e.g. "Common", "Garage")
+    var subcats = [];
+    allAssets.forEach(function (a) {
+      var sub = getSubcategory(a.file);
+      if (sub && subcats.indexOf(sub) === -1) subcats.push(sub);
     });
-    versions.forEach(function (v) {
-      var opt = document.createElement("option");
-      opt.value = v;
-      opt.textContent = "v" + v;
-      sel.appendChild(opt);
-    });
+    subcats.sort();
+    var subcatSel = document.getElementById("filter-subcat");
+    if (subcatSel) {
+      subcats.forEach(function (s) {
+        var opt = document.createElement("option");
+        opt.value = s;
+        opt.textContent = s;
+        subcatSel.appendChild(opt);
+      });
+    }
   }
 
   function updateStats() {
@@ -80,67 +107,68 @@
     var el = document.getElementById("stats-bar");
     if (el) {
       el.innerHTML =
-        "<span>Total Assets: <b>" + allAssets.length + "</b></span>" +
+        "<span>Total: <b>" + allAssets.length + "</b></span>" +
         "<span>Textures: <b>" + texCount + "</b></span>" +
         "<span>Audio: <b>" + audCount + "</b></span>";
     }
   }
 
   function renderGrid() {
-    var grid = document.getElementById("asset-grid");
-    var noResults = document.getElementById("no-results");
+    var grid    = document.getElementById("asset-grid");
+    var noRes   = document.getElementById("no-results");
     var countEl = document.getElementById("result-count");
     if (!grid) return;
 
-    if (countEl) {
-      countEl.textContent = filtered.length + " result" + (filtered.length !== 1 ? "s" : "");
-    }
+    if (countEl) countEl.textContent = filtered.length + " result" + (filtered.length !== 1 ? "s" : "");
 
     if (filtered.length === 0) {
       grid.innerHTML = "";
-      if (noResults) noResults.style.display = "block";
+      if (noRes) noRes.style.display = "block";
       return;
     }
-
-    if (noResults) noResults.style.display = "none";
+    if (noRes) noRes.style.display = "none";
 
     var inner = document.createElement("div");
     inner.className = "asset-grid-inner";
 
     filtered.forEach(function (asset) {
+      var idx  = allAssets.indexOf(asset);
+      var name = nameFromFile(asset.file);
+      var sub  = getSubcategory(asset.file);
+
       var item = document.createElement("div");
       item.className = "asset-item";
-      item.setAttribute("title", asset.name);
-      item.setAttribute("data-id", asset.id);
+      item.title = name;
 
-      var thumb;
       if (asset.type === "audio") {
-        thumb = document.createElement("div");
+        var thumb = document.createElement("div");
         thumb.className = "audio-thumb";
         thumb.innerHTML = "&#9834;<br>AUDIO";
+        item.appendChild(thumb);
       } else {
-        thumb = document.createElement("img");
-        thumb.src = asset.file;
-        thumb.alt = asset.name;
-        thumb.onerror = function () {
+        var img = document.createElement("img");
+        img.src = asset.file;
+        img.alt = name;
+        img.onerror = function () {
           this.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Crect width='64' height='64' fill='%23cccccc'/%3E%3Ctext x='50%25' y='50%25' font-size='9' fill='%23666' text-anchor='middle' dy='.3em'%3ENO IMG%3C/text%3E%3C/svg%3E";
         };
+        item.appendChild(img);
       }
 
       var nameEl = document.createElement("div");
       nameEl.className = "asset-name";
-      nameEl.textContent = asset.name;
-
-      var badgeEl = document.createElement("div");
-      badgeEl.className = "asset-type-badge";
-      badgeEl.textContent = (asset.item_type || asset.type || "").toUpperCase();
-
-      item.appendChild(thumb);
+      nameEl.textContent = name;
       item.appendChild(nameEl);
-      item.appendChild(badgeEl);
+
+      if (sub) {
+        var badge = document.createElement("div");
+        badge.className = "asset-type-badge";
+        badge.textContent = sub;
+        item.appendChild(badge);
+      }
 
       item.addEventListener("click", function () {
-        window.location.href = "asset.html?id=" + encodeURIComponent(asset.id);
+        window.location.href = "asset.html?i=" + idx;
       });
 
       inner.appendChild(item);
@@ -151,11 +179,10 @@
   }
 
   function bindFilters() {
-    var ids = ["filter-search", "filter-type", "filter-item-type", "filter-version", "sort-by"];
-    ids.forEach(function (id) {
+    ["filter-search", "filter-type", "filter-patch", "filter-subcat"].forEach(function (id) {
       var el = document.getElementById(id);
       if (el) {
-        el.addEventListener("input", applyFilters);
+        el.addEventListener("input",  applyFilters);
         el.addEventListener("change", applyFilters);
       }
     });
@@ -164,10 +191,9 @@
     if (resetBtn) {
       resetBtn.addEventListener("click", function () {
         document.getElementById("filter-search").value = "";
-        document.getElementById("filter-type").value = "";
-        document.getElementById("filter-item-type").value = "";
-        document.getElementById("filter-version").value = "";
-        document.getElementById("sort-by").value = "name-asc";
+        document.getElementById("filter-type").value   = "";
+        document.getElementById("filter-patch").value  = "";
+        document.getElementById("filter-subcat").value = "";
         applyFilters();
       });
     }
@@ -175,127 +201,79 @@
 
   function applyFilters() {
     var search = (document.getElementById("filter-search").value || "").toLowerCase().trim();
-    var type = document.getElementById("filter-type").value;
-    var itemType = document.getElementById("filter-item-type").value;
-    var version = document.getElementById("filter-version").value;
-    var sortBy = document.getElementById("sort-by").value;
+    var type   =  document.getElementById("filter-type").value;
+    var patch  =  document.getElementById("filter-patch").value;
+    var subcat =  document.getElementById("filter-subcat").value;
 
     filtered = allAssets.filter(function (a) {
-      if (type && a.type !== type) return false;
-      if (itemType && a.item_type !== itemType) return false;
-      if (version && a.patch_version !== version) return false;
-      if (search) {
-        var haystack = (a.name + " " + (a.tags || []).join(" ") + " " + (a.description || "")).toLowerCase();
-        if (haystack.indexOf(search) === -1) return false;
-      }
+      if (type   && a.type  !== type)  return false;
+      if (patch  && a.patch !== patch) return false;
+      if (subcat && getSubcategory(a.file) !== subcat) return false;
+      if (search && a.file.toLowerCase().indexOf(search) === -1) return false;
       return true;
     });
 
-    // Sort
-    filtered.sort(function (a, b) {
-      if (sortBy === "name-asc") return a.name.localeCompare(b.name);
-      if (sortBy === "name-desc") return b.name.localeCompare(a.name);
-      if (sortBy === "version-new") return versionCompare(b.patch_version, a.patch_version);
-      if (sortBy === "version-old") return versionCompare(a.patch_version, b.patch_version);
-      return 0;
-    });
-
     renderGrid();
-  }
-
-  function versionCompare(a, b) {
-    var pa = (a || "0").split(".").map(Number);
-    var pb = (b || "0").split(".").map(Number);
-    for (var i = 0; i < 3; i++) {
-      var diff = (pa[i] || 0) - (pb[i] || 0);
-      if (diff !== 0) return diff;
-    }
-    return 0;
   }
 
   // ---- ASSET VIEWER PAGE ----
 
   function renderAssetViewer() {
     var params = getQueryParams();
-    var id = params["id"];
-    if (!id) {
-      showError("No asset ID specified.");
+    var idx    = parseInt(params["i"], 10);
+
+    if (isNaN(idx) || idx < 0 || idx >= allAssets.length) {
+      showError("Asset not found.");
       return;
     }
 
-    var asset = null;
-    for (var i = 0; i < allAssets.length; i++) {
-      if (allAssets[i].id === id) {
-        asset = allAssets[i];
-        break;
-      }
-    }
+    var asset = allAssets[idx];
+    var name  = nameFromFile(asset.file);
+    var sub   = getSubcategory(asset.file);
 
-    if (!asset) {
-      showError("Asset not found: " + escHtml(id));
-      return;
-    }
+    document.getElementById("loading-msg").style.display = "none";
+    document.getElementById("viewer-container").style.display = "";
 
-    // Remove loading msg
-    var loading = document.getElementById("loading-msg");
-    if (loading) loading.style.display = "none";
-
-    var container = document.getElementById("viewer-container");
-    if (container) container.style.display = "";
-
-    // Name
-    var nameEl = document.getElementById("viewer-asset-name");
-    if (nameEl) nameEl.textContent = asset.name;
-
-    // Description
-    var descEl = document.getElementById("viewer-description");
-    if (descEl) descEl.textContent = asset.description || "(No description)";
+    document.getElementById("viewer-asset-name").textContent = name;
+    document.title = name + " — CrossWorlds Archive";
 
     // Media
     var mediaBox = document.getElementById("viewer-media-box");
-    if (mediaBox) {
-      if (asset.type === "audio") {
-        mediaBox.id = "viewer-audio-box";
-        mediaBox.innerHTML =
-          '<div class="audio-label">&#9834; AUDIO FILE</div>' +
-          '<audio controls><source src="' + escAttr(asset.file) + '"><p style="color:#aaaaff;font-size:10px;">Your browser does not support audio.</p></audio>';
-      } else {
-        mediaBox.id = "viewer-image-box";
-        mediaBox.innerHTML =
-          '<img id="viewer-img" src="' + escAttr(asset.file) + '" alt="' + escAttr(asset.name) + '" title="Click to view fullscreen">';
-        document.getElementById("viewer-img").addEventListener("click", function () {
-          openFullscreen(asset.file);
-        });
-      }
+    if (asset.type === "audio") {
+      mediaBox.innerHTML =
+        '<div class="audio-label">&#9834; AUDIO FILE</div>' +
+        '<audio controls><source src="' + escAttr(asset.file) + '"></audio>';
+    } else {
+      mediaBox.innerHTML =
+        '<img id="viewer-img" src="' + escAttr(asset.file) + '" alt="' + escAttr(name) + '" title="Click for fullscreen">';
+      document.getElementById("viewer-img").addEventListener("click", function () {
+        openFullscreen(asset.file);
+      });
     }
 
     // Metadata table
     var tbody = document.getElementById("meta-tbody");
-    if (tbody) {
-      var rows = [
-        ["Type", capitalize(asset.type || "")],
-        ["Item Type", capitalize(asset.item_type || "")],
-        ["Patch Version", asset.patch_version ? "v" + asset.patch_version : ""],
-        ["Category", capitalize(asset.category || "")],
-        ["Resolution", asset.resolution || (asset.type === "audio" ? "N/A" : "")],
-        ["File", asset.file],
-        ["Tags", renderTags(asset.tags)]
-      ];
-      rows.forEach(function (row) {
-        var tr = document.createElement("tr");
-        tr.innerHTML = "<th>" + escHtml(row[0]) + "</th><td>" + (typeof row[1] === "string" ? escHtml(row[1]) : row[1]) + "</td>";
-        tbody.appendChild(tr);
-      });
-    }
+    var rows = [
+      ["File",     asset.file],
+      ["Type",     asset.type],
+      ["Patch",    asset.patch],
+      ["Category", asset.category],
+      ["Folder",   sub || ""]
+    ];
+    rows.forEach(function (row) {
+      var tr = document.createElement("tr");
+      tr.innerHTML = "<th>" + escHtml(row[0]) + "</th><td>" + escHtml(row[1]) + "</td>";
+      tbody.appendChild(tr);
+    });
 
-    // Download button
+    // Download
     var dlBtn = document.getElementById("btn-download");
     if (dlBtn) {
       dlBtn.href = asset.file;
       dlBtn.setAttribute("download", asset.file.split("/").pop());
     }
 
-    // Fullscreen button (hide for audio)
+    // Fullscreen button
     var fsBtn = document.getElementById("btn-fullscreen");
     if (fsBtn) {
       if (asset.type === "audio") {
@@ -308,81 +286,42 @@
       }
     }
 
-    // Page title
-    document.title = asset.name + " — SRCW Archive";
-
-    // Fullscreen overlay events
-    var overlay = document.getElementById("fullscreen-overlay");
-    if (overlay) {
-      overlay.addEventListener("click", function (e) {
-        if (e.target === overlay) closeFullscreen();
-      });
-    }
-
-    var closeBtn = document.getElementById("fullscreen-close");
-    if (closeBtn) {
-      closeBtn.addEventListener("click", closeFullscreen);
-    }
-
+    // Fullscreen overlay
+    document.getElementById("fullscreen-overlay").addEventListener("click", function (e) {
+      if (e.target === this) closeFullscreen();
+    });
+    document.getElementById("fullscreen-close").addEventListener("click", closeFullscreen);
     document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape" || e.keyCode === 27) closeFullscreen();
+      if (e.key === "Escape") closeFullscreen();
     });
   }
 
-  function renderTags(tags) {
-    if (!tags || tags.length === 0) return "(none)";
-    return tags.map(function (t) {
-      return '<span class="tag">' + escHtml(t) + "</span>";
-    }).join(" ");
-  }
-
   function openFullscreen(src) {
-    var overlay = document.getElementById("fullscreen-overlay");
-    var fsImg = document.getElementById("fullscreen-img");
-    if (!overlay || !fsImg) return;
-    fsImg.src = src;
-    overlay.style.display = "block";
+    document.getElementById("fullscreen-img").src = src;
+    document.getElementById("fullscreen-overlay").style.display = "block";
   }
 
   function closeFullscreen() {
-    var overlay = document.getElementById("fullscreen-overlay");
-    if (overlay) overlay.style.display = "none";
+    document.getElementById("fullscreen-overlay").style.display = "none";
   }
 
   // ---- UTILITIES ----
 
   function getQueryParams() {
     var params = {};
-    var search = window.location.search.slice(1);
-    if (!search) return params;
-    search.split("&").forEach(function (pair) {
-      var idx = pair.indexOf("=");
-      if (idx > -1) {
-        params[decodeURIComponent(pair.slice(0, idx))] = decodeURIComponent(pair.slice(idx + 1));
-      }
+    window.location.search.slice(1).split("&").forEach(function (pair) {
+      var i = pair.indexOf("=");
+      if (i > -1) params[decodeURIComponent(pair.slice(0, i))] = decodeURIComponent(pair.slice(i + 1));
     });
     return params;
   }
 
   function escHtml(str) {
-    if (str === null || str === undefined) return "";
-    return String(str)
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;");
+    return String(str || "").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
   }
 
-  function escAttr(str) {
-    return escHtml(str);
-  }
+  function escAttr(str) { return escHtml(str); }
 
-  function capitalize(str) {
-    if (!str) return "";
-    return str.charAt(0).toUpperCase() + str.slice(1);
-  }
-
-  // ---- RUN ----
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", init);
   } else {
