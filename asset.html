@@ -29,29 +29,70 @@
 
     <div id="viewer-asset-name">...</div>
 
-    <div id="viewer-layout">
-
-      <div id="viewer-left">
-        <div id="viewer-media-box">
+    <!-- SIMPLE VIEWER (UI textures, audio, non-grouped assets) -->
+    <div id="viewer-simple" style="display:none;">
+      <div id="viewer-layout">
+        <div id="viewer-left">
+          <div id="viewer-media-box"></div>
+          <div id="viewer-btn-row">
+            <a id="btn-download" class="viewer-btn primary" href="#">&#8595; Download</a>
+            <a id="btn-fullscreen" class="viewer-btn" href="#">Fullscreen</a>
+          </div>
         </div>
-        <div id="viewer-btn-row">
-          <a id="btn-download" class="viewer-btn primary" href="#">&#8595; Download</a>
-          <a id="btn-fullscreen" class="viewer-btn" href="#">Fullscreen</a>
+        <div id="viewer-right">
+          <div class="meta-panel">
+            <div class="meta-panel-title">Asset Info</div>
+            <table id="meta-table">
+              <tbody id="meta-tbody"></tbody>
+            </table>
+          </div>
         </div>
       </div>
+    </div>
 
-      <div id="viewer-right">
-        <div class="meta-panel">
+    <!-- GROUPED VIEWER (characters, vehicles etc. with mesh+anim+texture) -->
+    <div id="viewer-grouped" style="display:none;">
+
+      <!-- INFO ROW -->
+      <div id="grouped-meta-row">
+        <div class="meta-panel" style="margin-bottom:8px;">
           <div class="meta-panel-title">Asset Info</div>
-          <table id="meta-table">
-            <tbody id="meta-tbody"></tbody>
+          <table id="grouped-meta-table">
+            <tbody id="grouped-meta-tbody"></tbody>
           </table>
         </div>
       </div>
 
-    </div>
+      <!-- ZIP DOWNLOAD -->
+      <div id="zip-bar">
+        <span id="zip-info"></span>
+        <button id="btn-zip" class="viewer-btn primary">&#8595; Download All as .zip</button>
+        <span id="zip-status"></span>
+      </div>
 
-  </div>
+      <!-- TABS -->
+      <div id="tab-bar">
+        <button class="tab-btn active" data-tab="textures">Textures</button>
+        <button class="tab-btn" data-tab="meshes">Meshes</button>
+        <button class="tab-btn" data-tab="animations">Animations</button>
+      </div>
+
+      <!-- TAB PANELS -->
+      <div id="tab-textures" class="tab-panel">
+        <div id="texture-grid" class="file-grid"></div>
+      </div>
+
+      <div id="tab-meshes" class="tab-panel" style="display:none;">
+        <div id="mesh-list" class="file-list"></div>
+      </div>
+
+      <div id="tab-animations" class="tab-panel" style="display:none;">
+        <div id="anim-list" class="file-list"></div>
+      </div>
+
+    </div><!-- /viewer-grouped -->
+
+  </div><!-- /viewer-container -->
 
   <div id="footer">
     CrossWorlds Archive &mdash; fan-maintained community project, not affiliated with SEGA or Sonic Team &mdash;
@@ -60,12 +101,15 @@
 
 </div>
 
+<!-- FULLSCREEN OVERLAY -->
 <div id="fullscreen-overlay">
   <span id="fullscreen-close">[X] Close</span>
   <img id="fullscreen-img" src="" alt="">
   <div id="fullscreen-hint">ESC or click outside image to close</div>
 </div>
 
+<!-- JSZip for browser-side zip building -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
