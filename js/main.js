@@ -97,12 +97,39 @@
     });
     var el = document.getElementById("stats-bar");
     if (el) {
-      var parts = ["Total: <b>" + allAssets.length + "</b>"];
+      var parts = ["Total files: <b>" + allAssets.length + "</b>"];
       ["texture","mesh","animation","audio"].forEach(function (t) {
         if (counts[t]) parts.push(capitalize(t) + "s: <b>" + counts[t] + "</b>");
       });
       el.innerHTML = parts.join(" &nbsp;&mdash;&nbsp; ");
     }
+  }
+
+  // Collapse grouped assets (characters, vehicles etc.) into one card per group.
+  // Ungrouped assets (UI textures, audio) each get their own card as before.
+  function buildDisplayList(assets) {
+    var display    = [];
+    var seenGroups = {};
+
+    assets.forEach(function (a) {
+      if (!a.group) {
+        display.push({ rep: a, grouped: false });
+      } else {
+        if (!seenGroups[a.group]) {
+          seenGroups[a.group] = true;
+          // Use a texture as the thumbnail if one exists in the group
+          var groupMembers = allAssets.filter(function (x) { return x.group === a.group; });
+          var thumb = null;
+          for (var i = 0; i < groupMembers.length; i++) {
+            if (groupMembers[i].type === "texture") { thumb = groupMembers[i]; break; }
+          }
+          if (!thumb) thumb = groupMembers[0];
+          display.push({ rep: thumb, grouped: true, group: a.group, count: groupMembers.length });
+        }
+      }
+    });
+
+    return display;
   }
 
   function renderGrid() {
@@ -112,20 +139,33 @@
     var loading = document.getElementById("loading-msg");
 
     if (loading) loading.style.display = "none";
-    if (countEl) countEl.textContent = "Showing " + filtered.length + " asset" + (filtered.length !== 1 ? "s" : "");
+
+    var displayList = buildDisplayList(filtered);
+
+    if (countEl) countEl.textContent = "Showing " + displayList.length + " item" + (displayList.length !== 1 ? "s" : "");
 
     grid.querySelectorAll(".asset-card").forEach(function (c) { c.parentNode.removeChild(c); });
 
-    if (filtered.length === 0) {
+    if (displayList.length === 0) {
       if (noRes) noRes.style.display = "block";
       return;
     }
     if (noRes) noRes.style.display = "none";
 
-    filtered.forEach(function (asset) {
+    displayList.forEach(function (entry) {
+      var asset     = entry.rep;
       var idx       = allAssets.indexOf(asset);
-      var name      = nameFromFile(asset.file);
       var subfolder = getSubfolder(asset.file);
+
+      // For grouped entries derive the entity name from the group key
+      // group format: patch::category::subcategory::entity
+      var name;
+      if (entry.grouped) {
+        var gparts = entry.group.split("::");
+        name = gparts[gparts.length - 1].replace(/_/g, " ");
+      } else {
+        name = nameFromFile(asset.file);
+      }
 
       var card = document.createElement("div");
       card.className = "asset-card";
@@ -163,8 +203,13 @@
       folderEl.textContent = (asset.subfolder || subfolder || asset.category || "") + " / " + asset.patch;
 
       var badge = document.createElement("span");
-      badge.className = "asset-card-badge badge-" + asset.type;
-      badge.textContent = asset.type;
+      if (entry.grouped) {
+        badge.className = "asset-card-badge badge-group";
+        badge.textContent = entry.count + " files";
+      } else {
+        badge.className = "asset-card-badge badge-" + asset.type;
+        badge.textContent = asset.type;
+      }
 
       body.appendChild(nameEl);
       body.appendChild(folderEl);
