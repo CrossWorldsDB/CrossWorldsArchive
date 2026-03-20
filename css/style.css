@@ -1,3 +1,5 @@
+/* CrossWorlds Archive — style.css */
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -917,4 +919,10 @@ a:visited {
   word-break: break-all;
   text-align: center;
   padding: 0 10px;
+}
+
+.badge-group {
+  background: #fff8e0;
+  color: #886600;
+  border: 1px solid #ddbb55;
 }
