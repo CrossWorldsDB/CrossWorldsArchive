@@ -53,7 +53,6 @@
     return parts[3] || null;
   }
 
-  // ---- INDEX PAGE ----
 
   function renderIndex() {
     filtered = allAssets.slice();
@@ -104,9 +103,6 @@
       el.innerHTML = parts.join(" &nbsp;&mdash;&nbsp; ");
     }
   }
-
-  // Collapse grouped assets (characters, vehicles etc.) into one card per group.
-  // Ungrouped assets (UI textures, audio) each get their own card as before.
   function buildDisplayList(assets) {
     var display    = [];
     var seenGroups = {};
@@ -117,7 +113,6 @@
       } else {
         if (!seenGroups[a.group]) {
           seenGroups[a.group] = true;
-          // Use a texture as the thumbnail if one exists in the group
           var groupMembers = allAssets.filter(function (x) { return x.group === a.group; });
           var thumb = null;
           for (var i = 0; i < groupMembers.length; i++) {
@@ -157,8 +152,6 @@
       var idx       = allAssets.indexOf(asset);
       var subfolder = getSubfolder(asset.file);
 
-      // For grouped entries derive the entity name from the group key
-      // group format: patch::category::subcategory::entity
       var name;
       if (entry.grouped) {
         var gparts = entry.group.split("::");
@@ -265,7 +258,6 @@
     renderGrid();
   }
 
-  // ---- ASSET VIEWER ----
 
   function renderAssetViewer() {
     var params = getQueryParams();
@@ -282,19 +274,16 @@
     if (loading) loading.style.display = "none";
     document.getElementById("viewer-container").style.display = "";
 
-    // Set page title and asset name banner
     var name = nameFromFile(asset.file);
     document.getElementById("viewer-asset-name").textContent = name;
     document.title = name + " — CrossWorlds Archive";
 
-    // Decide which viewer to show
     if (asset.group) {
       renderGroupedViewer(asset);
     } else {
       renderSimpleViewer(asset);
     }
 
-    // Fullscreen overlay wiring (used by both viewers)
     document.getElementById("fullscreen-overlay").addEventListener("click", function (e) {
       if (e.target === this) closeFullscreen();
     });
@@ -304,7 +293,6 @@
     });
   }
 
-  // ---- SIMPLE VIEWER (non-grouped assets) ----
 
   function renderSimpleViewer(asset) {
     document.getElementById("viewer-simple").style.display = "";
@@ -323,7 +311,6 @@
         openFullscreen(asset.file);
       });
     } else {
-      // mesh, animation, or other binary file
       mediaBox.classList.add("file-box");
       mediaBox.innerHTML =
         '<div class="file-box-icon">' + typeIcon(asset.type) + '</div>' +
@@ -331,7 +318,6 @@
         '<div class="file-box-name">' + escHtml(filenameFromPath(asset.file)) + '</div>';
     }
 
-    // Meta table
     var tbody = document.getElementById("meta-tbody");
     [
       ["File",     asset.file],
@@ -360,12 +346,10 @@
     }
   }
 
-  // ---- GROUPED VIEWER (character / vehicle etc.) ----
 
   function renderGroupedViewer(asset) {
     document.getElementById("viewer-grouped").style.display = "";
 
-    // Find all assets in the same group
     var groupAssets = allAssets.filter(function (a) {
       return a.group === asset.group;
     });
@@ -374,8 +358,6 @@
     var meshes     = groupAssets.filter(function (a) { return a.type === "mesh"; });
     var animations = groupAssets.filter(function (a) { return a.type === "animation"; });
 
-    // Group meta info — derive entity name from group key
-    // group key format: patch::category::subcategory::entity
     var groupParts  = asset.group.split("::");
     var entityName  = groupParts[3] || groupParts[groupParts.length - 1] || asset.group;
 
@@ -394,7 +376,6 @@
       tbody.appendChild(tr);
     });
 
-    // Zip bar
     var totalFiles = groupAssets.length;
     document.getElementById("zip-info").textContent =
       totalFiles + " file" + (totalFiles !== 1 ? "s" : "") + " total — " +
@@ -406,21 +387,16 @@
       buildZip(groupAssets, entityName);
     });
 
-    // Update tab labels with counts
     setTabCount("textures",   textures.length);
     setTabCount("meshes",     meshes.length);
     setTabCount("animations", animations.length);
 
-    // Render texture grid
     renderTextureGrid(textures);
 
-    // Render mesh list
     renderFileList(document.getElementById("mesh-list"), meshes, "mesh");
 
-    // Render animation list
     renderFileList(document.getElementById("anim-list"), animations, "animation");
 
-    // Tab switching
     document.querySelectorAll(".tab-btn").forEach(function (btn) {
       btn.addEventListener("click", function () {
         var tab = this.getAttribute("data-tab");
@@ -521,7 +497,6 @@
     });
   }
 
-  // ---- ZIP BUILDER ----
 
   function buildZip(assets, entityName) {
     var statusEl = document.getElementById("zip-status");
@@ -546,7 +521,6 @@
           return res.arrayBuffer();
         })
         .then(function (buf) {
-          // Preserve folder structure inside the zip
           var zipPath = asset.file.replace(/^assets\//, "");
           zip.file(zipPath, buf);
           done++;
@@ -584,7 +558,6 @@
     });
   }
 
-  // ---- FULLSCREEN ----
 
   function openFullscreen(src) {
     document.getElementById("fullscreen-img").src = src;
@@ -595,7 +568,6 @@
     document.getElementById("fullscreen-overlay").style.display = "none";
   }
 
-  // ---- UTILS ----
 
   function getQueryParams() {
     var params = {};
