@@ -1,4 +1,3 @@
-
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -666,4 +665,256 @@ a:visited {
   background: #f4f4f4;
   font-weight: bold;
   white-space: nowrap;
+}
+
+/* ---- GROUPED VIEWER ---- */
+
+#zip-bar {
+  background: #f0f4ff;
+  border: 1px solid #bbccee;
+  border-left: 4px solid #2255cc;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+#zip-info {
+  font-size: 11px;
+  color: #444444;
+  flex: 1;
+}
+
+#zip-status {
+  font-size: 11px;
+  color: #666666;
+}
+
+#btn-zip:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ---- TABS ---- */
+
+#tab-bar {
+  display: flex;
+  gap: 0;
+  border-bottom: 2px solid #2255cc;
+  margin-bottom: 8px;
+}
+
+.tab-btn {
+  font-size: 11px;
+  font-family: Verdana, Arial, sans-serif;
+  background: #f0f0f0;
+  border: 1px solid #cccccc;
+  border-bottom: none;
+  padding: 6px 16px;
+  cursor: pointer;
+  color: #444444;
+  margin-right: 3px;
+  margin-bottom: -2px;
+}
+
+.tab-btn:hover {
+  background: #e4e8ff;
+  color: #2255cc;
+}
+
+.tab-btn.active {
+  background: #ffffff;
+  color: #2255cc;
+  font-weight: bold;
+  border-color: #2255cc;
+  border-bottom: 2px solid #ffffff;
+}
+
+.tab-panel {
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  border-top: none;
+  padding: 10px;
+  min-height: 120px;
+}
+
+.empty-tab {
+  color: #888888;
+  font-size: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* ---- TEXTURE GRID (inside grouped viewer) ---- */
+
+.file-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 8px;
+}
+
+.texture-item {
+  border: 1px solid #dddddd;
+  background: #fafafa;
+  padding: 6px;
+  text-align: center;
+}
+
+.texture-item img {
+  width: 100%;
+  height: 120px;
+  object-fit: contain;
+  background: #eeeeee;
+  border: 1px solid #dddddd;
+  display: block;
+  cursor: pointer;
+  image-rendering: pixelated;
+  margin-bottom: 5px;
+}
+
+.texture-item img:hover {
+  border-color: #2255cc;
+}
+
+.texture-item-name {
+  font-size: 10px;
+  color: #333333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 5px;
+}
+
+/* ---- FILE LIST (meshes, animations) ---- */
+
+.file-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.file-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 8px;
+  border: 1px solid #eeeeee;
+  background: #fafafa;
+}
+
+.file-row:hover {
+  background: #f0f4ff;
+  border-color: #bbccee;
+}
+
+.file-row-icon {
+  font-size: 16px;
+  color: #2255cc;
+  flex-shrink: 0;
+  width: 20px;
+  text-align: center;
+}
+
+.file-row-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.file-row-name {
+  font-size: 11px;
+  font-weight: bold;
+  color: #111111;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.file-row-path {
+  font-size: 10px;
+  color: #888888;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dl-btn {
+  flex-shrink: 0;
+  font-size: 10px;
+  padding: 3px 10px;
+}
+
+/* ---- NON-TEXTURE CARD THUMBS ---- */
+
+.asset-card-thumb.file-thumb {
+  background: #eef0f8;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.asset-card-thumb.file-thumb[data-type="mesh"] {
+  background: #eef0f8;
+}
+
+.asset-card-thumb.file-thumb[data-type="animation"] {
+  background: #f0f8ee;
+}
+
+.file-thumb-icon {
+  font-size: 28px;
+  color: #2255cc;
+}
+
+.asset-card-thumb.file-thumb[data-type="animation"] .file-thumb-icon {
+  color: #227722;
+}
+
+.file-thumb-label {
+  font-size: 10px;
+  font-weight: bold;
+  color: #666666;
+  letter-spacing: 0.5px;
+}
+
+/* ---- EXTRA BADGES ---- */
+
+.badge-mesh {
+  background: #eef0f8;
+  color: #2255cc;
+  border: 1px solid #aabbee;
+}
+
+.badge-animation {
+  background: #eef8ee;
+  color: #227722;
+  border: 1px solid #aaddaa;
+}
+
+/* ---- FILE / MEDIA BOX VARIANTS ---- */
+
+#viewer-media-box.file-box {
+  background: #eef0f8;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.file-box-icon {
+  font-size: 40px;
+  color: #2255cc;
+}
+
+.file-box-label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #2255cc;
+  letter-spacing: 0.5px;
+}
+
+.file-box-name {
+  font-size: 11px;
+  color: #555555;
+  word-break: break-all;
+  text-align: center;
+  padding: 0 10px;
 }
